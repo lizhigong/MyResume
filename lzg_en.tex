@@ -1,0 +1,242 @@
+\documentclass[letterpaper,10pt]{article}
+
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{bibentry}
+
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=mygreylink     % can put red here to better visualize the links
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.85}
+\definecolor{mygreylink}{gray}{.30}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		#3 & #4 \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+%General Resume Tips
+%   No periods!  Technically, nothing in this document is a full sentence.
+%   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
+%   More tips on bottom of this LaTeX document.
+%-----------------------------------------------------------
+
+\begin{document}
+
+\newcommand{\mywebheader}{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{{\Huge Zheran Fang}} & \href{mailto:i@lazarusx.com}{i@lazarusx.com}\\
+     & {Mobile: +86 152-0192-6975}\\
+     & \href{https://github.com/LazarusX}{https://github.com/LazarusX} \\
+     & \href{http://stackoverflow.com/users/498996}{http://stackoverflow.com/users/498996} \\
+   % Objective: \textbf{Software Engineer} %or \textbf{Data Mining Engineer}
+	\end{tabular*}
+\\
+\vspace{0.1in}}
+
+% CHANGE HEADER SOURCE HERE
+\mywebheader
+%\resheading{Research Interests}
+%	\begin{itemize}
+%       \item
+%			Data Mining \& Machine Learning
+%		\item
+%			Propagation in Social Networks
+%       \item
+%            Algorithms
+%	\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+	\begin{itemize}
+       \item
+			\ressubheading{{Fudan University}}{}{\emph{M.Sc in Computer Science}}{\emph{Sept. 2013 -- Present}}
+			{
+				\begin{itemize}
+                    
+                    \resitem{Research assistant at Lab of Cryptography and Information Security}
+                    \resitem{Advisor: Weili Han}
+                    \resitem{National Scholarship for Graduates, \emph{Rank: 1/32}}
+                    \resitem{First Grade Scholarship for Graduate Freshmen, \emph{Rank: 1/32}}
+				\end{itemize}
+			}
+
+
+    \item
+			\ressubheading{{Fudan University}}{}{\emph{B.Eng. in Software Engineering}}{\emph{Sept. 2009 -- Jun. 2013}}
+			{
+				\begin{itemize}
+                    
+                    \resitem{Research assistant at Lab of Cryptography and Information Security \emph{(Feb. 2011 -- Jun. 2013)}}
+                    \resitem{Advisor: Weili Han}
+                    \resitem{Third Grade Scholarship for Undergraduates}
+                    \resitem{Second Grade Scholarship for Undergraduates}
+				\end{itemize}
+			}
+	\end{itemize} % End Education list
+
+\resheading{{Skills}}
+	\begin{itemize}
+		\item
+            \textbf{Programming:} Proficient in Java, Objective-C, Android; Entry level at C, Python, C++
+        \item    
+            \textbf{English:} CET-6 623; Fluent in spoken and written English; Obtained  \emph{Shanghai Intermediate Interpretation Certificate}
+            %\textbf{Operating System:} Linux, Windows 
+            %\textbf{Tools:} Prezi, R(Self-learning)
+        %\ite
+             %\textbf{TOEFL:} Reading: 30, Listening: 26, Speaking: 20, Writing: 28, Total: 104 (Nov. 2012)
+         %\item \textbf{CET:} CET-4: 623 (Jun. 2010), CET-6: 584 (Dec. 2010)
+        % \item    \textbf{GRE:} Verbal: 153 (57\%), Quantitative: 169 (98\%) (Oct. 2012), Analytical Writing: 4.0 (49\%) (Dec. 2011)
+	\end{itemize} % End Skills list &
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Project Experience}
+	\begin{itemize}
+		\item
+			\ressubheading{Android Sensing Control}{Research Project}{Android Framework, Linux Kernel}{\emph{Sept. 2013 -- Mar. 2014}}
+			{\begin{itemize}
+				\resitem{Developed a framework for controlling applications' collection of sensing data on Android devices}
+                \resitem{Modified the \texttt{PackageManager} on the framework layer to allow revocation of sensing related permissions}
+				\resitem{Implemented robust protection on the kernel layer against malicious attempts to obtain root privilege and attacks circumventing the framework layer protection based on \emph{SELinux}}
+				\resitem{Accepted as a subtask of the national \emph{Core Electronic Devices, High-end Generic Chips and Basic Software} project}
+			\end{itemize}
+			}	
+	\end{itemize}
+			
+	\begin{itemize}
+		\item
+			\ressubheading{Qiancao Network Technology Co., Ltd}{Startup Project}{iOS, Android}{\emph{Nov. 2013 -- June. 2014}}
+			{\begin{itemize}
+				\resitem{Developed iOS clients of two apps, \emph{Everybody's Busy}, a social network for sharing interests and discovering things to do, and \emph{Oran}, an app for tracking everyday activities}
+                \resitem{Oversaw the development of Android clients of the above two apps as a project manager}
+			\end{itemize}
+			}	
+	\end{itemize}
+	\begin{itemize}
+		\item
+			\ressubheading{Collaborative Policy Administration}{Research Project}{Android, Data Mining}{\emph{Mar. 2011 -- Feb. 2014}}
+			{\begin{itemize}
+				\resitem{Proposed a novel policy administration framework with the core idea that applications with similar functionalities shall have similar policies}
+				\resitem{Employed a data mining based method to obtain similar policies, achieving significant improvement over existing methods}
+				\resitem{One poster and one paper based on this project accepted by ACM CCS '11 and IEEE TPDS respectively}
+			\end{itemize}
+			}	
+	\end{itemize}  % End Work Experience list
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+%\resheading{Academic Experience}
+	%\begin{itemize}
+		%\item
+		%	\ressubheading{Research Assistant}{Fudan University}{Lab of Cryptography and Information Security}{Dec. 2010 -- June. 2012}
+		%		{
+		%		\begin{itemize}
+		%			\resitem{Project: \textbf{Your Password is My Password: An Empirical Study on Cross-Site Password Reuse}. Responsible for the experiment of passwords sharing among different web sites, username and password sharing and password strength analysis. Also involved in the statistics, analysis and writing part of the paper.
+
+					%\resitem{Project: \textbf{Dynamically Combine Authentication Factors based on Quantified Risk and Benefit}}. Responsible for the model modification, experiment interpretation and paper writing.\\
+
+		%		\end{itemize}
+		%		}
+		%\item
+		%	\ressubheading{Research Intern (1 of 4 from Fudan)}{University College Dublin}{Complex \& Adaptive System Lab}{July. 2012 -- Sep. 2012}
+		%		{
+		%		\begin{itemize}
+		%			\resitem{Individual Project: \textbf{Popularity and Sentiment Analysis of Different Mobile Operating Systems on Geo-tagged Tweets}.} 
+					%\resitem{Proposed the ideas, identified the brands to compare and designed the structure} 
+					%\resitem{Connected MongoDB to store the tweets.Implemented simple NLP methods to analyze the sentiment towards different mobile OSs.} 
+					%\resitem{Visualized the data analysis and the sentiment results on global map with Google MAPS APIs.} 
+					%\resitem{Prezi Presentation: http://tinyurl.com/qjp9hln}
+		%		\end{itemize}
+		%		}
+
+ %}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+% \resheading{Course Project}
+% \begin{itemize}
+
+% \item \textbf{Indri Search Engine} from \textbf{Search Engine and Web Mining}. Implemented in Java with Indri search engine. Basic search operations of retrieval and also different evaluation methods such as BM25 and tf-idf. The search could work on full text index and achieve desired precision on test.
+
+% \item \textbf{Recommendation System} from \textbf{Search Engine and Web Mining}. Implemented in Java on given authenticate Netflix data sets. With existing user ratings on films, predict the users' ratings on certain films using K-NN method. Achieved the 4th class-wide in blind test.
+
+%\item \textbf{Graph Mining with SQL} from \textbf{Multimedia Databases and Data Mining}. Implemented several Graph mining algorithms such as Six-Degrees, PageRank, Diameter etc on millions of edges and nodes in SQL.
+
+%\item \textbf{Optimization using Decision Trees} from \textbf{Machine Learning}. Implemented in Java with existing Weka libraries. Adjusting the parameters of different decision tree models to optimize the predictions.
+
+%\item \textbf{Question Answering System} from \textbf{Natural Language Processing}. Adopted open source model from Stanford NLP, Indri to create Answering system by processing question, extracting key words and search the answer from background corpus.
+
+% \item \textbf{Migratable Process} from \textbf{Distributed System}. Implemented Migratable Process to allow process runs on one node to migrate to another and continue running with Transactional File I/O.
+
+% \item \textbf{Lunchbox} from \textbf{Mobile Development}. Implemented mobile App of Lunchbox delivery and pickup. Created Android version and backend service for both restaurant side and customer side. Solved the problem for ordering management, order submitting, canceling and lunchbox claiming.
+
+% \item \textbf{Project Table(ongoing)} from \textbf{Capstone Project}. Using Probabilistic Model to learn web page structures and use the learnt structure to extract knowledge and information from web pages, putting them into relational database.
+
+% \end{itemize}
+	
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Selected Publications}
+\begin{itemize}
+ \item 
+ \textbf{Zheran Fang}, Weili Han, Yingjiu Li, \emph{Permission Based Android Security: Issues and Countermeasures}, In Computers \& Security 43 (2014), 205–218 (Dec, 2012)
+
+ \item
+  Weili Han, \textbf{Zheran Fang}, Laurence T. Yang, Gang Pan, Zhaohui Wu, \emph{Collaborative Policy Administration}, In IEEE Transactions on Parallel and Distributed Systems
+\end{itemize}
+
+
+
+%\resheading{{Selected Awards and Honors}}
+%\begin{center}
+%\begin{tabular*}{6.6in}{l@{\extracolsep{\fill}}r}
+        %\multicolumn{2}{c}{TEDxFDU Team Member. Co-host and CTO of TEDxFDUSalon \cftdotfill{\cftdotsep}2012}\\
+%        \multicolumn{2}{c}{SCSK Scholarship (1 of 10 in Fudan University) \cftdotfill{\cftdotsep}2012}\\
+%		\multicolumn{2}{c}{Morgan Stanley Scholarship (1 of 15 in Fudan University) \cftdotfill{\cftdotsep}2011}\\
+		%\multicolumn{2}{c}{Xiyuan Scholarship (Fudan Undergraduate Research Funding) \cftdotfill{\cftdotsep}2011}\\
+        %\multicolumn{2}{c}{People Scholarship \cftdotfill{\cftdotsep}2012, 2010}\\
+        %\multicolumn{2}{c}{Championship and Best Debater of Fudan Freshman Debating Competition\cftdotfill{\cftdotsep}2009}\\
+
+%		\vphantom{E}
+%\end{tabular*}
+%\end{center}
+
+
+\end{document}
