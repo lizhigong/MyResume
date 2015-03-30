@@ -1,4 +1,3 @@
-%!TEX program = xelatex
 \documentclass[letterpaper,10pt]{article}
 
 %-----------------------------------------------------------
@@ -42,22 +41,6 @@
 		\textbf{#1} & #2 \\
 		#3 & #4 \\
 \end{tabular*}\vspace{-6pt}}
-
-\newcommand{\cvitem}[2]{
-\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
-		#1 & #2 \\
-\end{tabular*}\vspace{-1pt}}
-
-%Support Chinese
-\usepackage{xunicode, xltxtra}
-\XeTeXlinebreaklocale "zh"
-\usepackage{CJKutf8}
-\setmainfont[Mapping=tex-text]{Hiragino Sans GB}
-\setsansfont[Mapping=tex-text]{Hiragino Sans GB}
-% \setmainfont[Mapping=tex-text]{STHeitiSC-Light}
-% \setsansfont[Mapping=tex-text]{STHeitiSC-Light}
-\CJKtilde
-
 %-----------------------------------------------------------
 
 %-----------------------------------------------------------
@@ -71,10 +54,10 @@
 
 \newcommand{\mywebheader}{
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-	\textbf{{\Huge 李致公}} & \href{mailto:lizhigong1991@gmail.com}{lizhigong1991@gmail.com}\\
-     & {手机：+86 152-0192-6877}\\
-     & \href{https://github.com/lizhigong}{https://github.com/lizhigong} \\
-     & \href{http://stackoverflow.com/users/1412555}{http://stackoverflow.com/users/1412555} \\
+	\textbf{{\Huge Zheran Fang}} & \href{mailto:i@lazarusx.com}{i@lazarusx.com}\\
+     & {Mobile: +86 152-0192-6975}\\
+     & \href{https://github.com/LazarusX}{https://github.com/LazarusX} \\
+     & \href{http://stackoverflow.com/users/498996}{http://stackoverflow.com/users/498996} \\
    % Objective: \textbf{Software Engineer} %or \textbf{Data Mining Engineer}
 	\end{tabular*}
 \\
@@ -94,112 +77,81 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%
-\resheading{教育}
+\resheading{Education}
 	\begin{itemize}
        \item
-			\ressubheading{复旦大学}{}{\emph{计算机软件与理论理学硕士}}{\emph{2013~年至今}}
-			% {
-			% 	\begin{itemize}
+			\ressubheading{{Fudan University}}{}{\emph{M.Sc in Computer Science}}{\emph{Sept. 2013 -- Present}}
+			{
+				\begin{itemize}
                     
-   %                  \resitem{密码学与信息安全实验室研究助理}
-   %                  \resitem{导师：韩伟力}
-   %                  \resitem{研究生国家奖学金，\emph{总分排名：1/32}}
-   %                  \resitem{研究生新生奖学金一等奖，\emph{总分排名：1/32}}
-			% 	\end{itemize}
-			% }
+                    \resitem{Research assistant at Lab of Cryptography and Information Security}
+                    \resitem{Advisor: Weili Han}
+                    \resitem{National Scholarship for Graduates, \emph{Rank: 1/32}}
+                    \resitem{First Grade Scholarship for Graduate Freshmen, \emph{Rank: 1/32}}
+				\end{itemize}
+			}
 
 
     \item
-			\ressubheading{复旦大学}{}{\emph{软件工程工学学士}}{\emph{2009~年至2013~年}}
-			% {
-			% 	\begin{itemize}
+			\ressubheading{{Fudan University}}{}{\emph{B.Eng. in Software Engineering}}{\emph{Sept. 2009 -- Jun. 2013}}
+			{
+				\begin{itemize}
                     
-   %                  \resitem{密码学与信息安全实验室研究助理 \emph{（2011~年~2~月至~2013~年~6~月）}}
-   %                  \resitem{导师：韩伟力}
-   %                  \resitem{本科生优秀学生奖学金三等奖}
-   %                  \resitem{本科生优秀学生奖学金二等奖}
-			% 	\end{itemize}
-			% }
-	\item \ressubheading{爱尔兰都柏林大学}{}{\emph{计算机科学理学学士}}{\emph{2010~年至2013~年}}
+                    \resitem{Research assistant at Lab of Cryptography and Information Security \emph{(Feb. 2011 -- Jun. 2013)}}
+                    \resitem{Advisor: Weili Han}
+                    \resitem{Third Grade Scholarship for Undergraduates}
+                    \resitem{Second Grade Scholarship for Undergraduates}
+				\end{itemize}
+			}
 	\end{itemize} % End Education list
 
-
-\resheading{奖项}
-	\begin{itemize}
-		\item \cvitem{硕士研究生国家奖学金}{2014~年}
-		\item \cvitem{USENIX Student Grant(\$1200)}{2014~年}
-		\item \cvitem{硕士研究生新生二等奖学金}{2013~年}
-		\item \cvitem{本科生优秀奖学金三等奖}{2010~年, 2011~年}
-	\end{itemize}
-
-
-\resheading{{技能}}
+\resheading{{Skills}}
 	\begin{itemize}
 		\item
-            \textbf{编程：} 熟悉~Java; 了解~C, Python, MySQL % Maybe proficient in MySQL
-        \item
-            \textbf{英语：} CET-6 545~分，良好的英语读写能力
-        \item 
-        	\textbf{工具：} 熟悉VIM，了解\LaTeX
+            \textbf{Programming:} Proficient in Java, Objective-C, Android; Entry level at C, Python, C++
+        \item    
+            \textbf{English:} CET-6 623; Fluent in spoken and written English; Obtained  \emph{Shanghai Intermediate Interpretation Certificate}
+            %\textbf{Operating System:} Linux, Windows 
+            %\textbf{Tools:} Prezi, R(Self-learning)
+        %\ite
+             %\textbf{TOEFL:} Reading: 30, Listening: 26, Speaking: 20, Writing: 28, Total: 104 (Nov. 2012)
+         %\item \textbf{CET:} CET-4: 623 (Jun. 2010), CET-6: 584 (Dec. 2010)
+        % \item    \textbf{GRE:} Verbal: 153 (57\%), Quantitative: 169 (98\%) (Oct. 2012), Analytical Writing: 4.0 (49\%) (Dec. 2011)
 	\end{itemize} % End Skills list &
 
 %%%%%%%%%%%%%%%%%%%%%%
-
-\resheading{校园经历}
-\begin{itemize}
-	\item \cvitem{在国际顶尖安全会议USENIX Security Symposium 上演讲}{2014~年}
-	\item \cvitem{复旦大学摄影协会张江分会 创立者之一}{2010~年}
-	\item \cvitem{复旦大学摄影协会张江分会 副会长}{2010~年至2011~年}
-\end{itemize}
-
-\resheading{项目经历}
+\resheading{Project Experience}
 	\begin{itemize}
 		\item
-			\ressubheading{中文口令特点研究}{科研项目}{Java，MYSQL}{\emph{2013~年~10~月至~2014~年~3~月}}
+			\ressubheading{Android Sensing Control}{Research Project}{Android Framework, Linux Kernel}{\emph{Sept. 2013 -- Mar. 2014}}
 			{\begin{itemize}
-				\resitem{研究中文口令的构成特点}
-                \resitem{改进了基于上下文无关文法(PCFG)的口令猜测方法}
-				\resitem{在国际顶尖安全会议USENIX Security Symposium 上发表论文，并进行演讲}
+				\resitem{Developed a framework for controlling applications' collection of sensing data on Android devices}
+                \resitem{Modified the \texttt{PackageManager} on the framework layer to allow revocation of sensing related permissions}
+				\resitem{Implemented robust protection on the kernel layer against malicious attempts to obtain root privilege and attacks circumventing the framework layer protection based on \emph{SELinux}}
+				\resitem{Accepted as a subtask of the national \emph{Core Electronic Devices, High-end Generic Chips and Basic Software} project}
+			\end{itemize}
+			}	
+	\end{itemize}
+			
+	\begin{itemize}
+		\item
+			\ressubheading{Qiancao Network Technology Co., Ltd}{Startup Project}{iOS, Android}{\emph{Nov. 2013 -- June. 2014}}
+			{\begin{itemize}
+				\resitem{Developed iOS clients of two apps, \emph{Everybody's Busy}, a social network for sharing interests and discovering things to do, and \emph{Oran}, an app for tracking everyday activities}
+                \resitem{Oversaw the development of Android clients of the above two apps as a project manager}
 			\end{itemize}
 			}	
 	\end{itemize}
 	\begin{itemize}
-		\item 
-			\ressubheading{口令猜测程序}{科研项目}{Java}{2013~年}
+		\item
+			\ressubheading{Collaborative Policy Administration}{Research Project}{Android, Data Mining}{\emph{Mar. 2011 -- Feb. 2014}}
 			{\begin{itemize}
-				\resitem{使用Java语言编写了基于上下文无关文法(PCFG)的口令猜测工具}
-				\resitem{使用Java编写了基于马尔科夫模型(Markov Model)的口令猜测工具}
+				\resitem{Proposed a novel policy administration framework with the core idea that applications with similar functionalities shall have similar policies}
+				\resitem{Employed a data mining based method to obtain similar policies, achieving significant improvement over existing methods}
+				\resitem{One poster and one paper based on this project accepted by ACM CCS '11 and IEEE TPDS respectively}
 			\end{itemize}
-			}
-	\end{itemize}
-	\begin{itemize}
-		\item 
-			\ressubheading{IRC服务器程序}{课程项目}{C}{2013~年}
-			{\begin{itemize}
-				\resitem{使用C语言实现IRC的服务器程序，用户可以注册，建立聊天室，并进行对话}
-			\end{itemize}
-			}
-	\end{itemize}
-			
-	% \begin{itemize}
-	% 	\item
-	% 		\ressubheading{浅草网络科技有限公司}{创业项目}{iOS、Android}{\emph{2013~年~11~月至~2014~年~6~月}}
-	% 		{\begin{itemize}
-	% 			\resitem{参与“大家很忙”（一个分享兴趣和发现活动的社交网络）和“Oran”（一款记录个人每日活动的应用）两款应用的~iOS~客户端开发}
- %                \resitem{作为项目负责人管理和统筹以上两款应用的~Android~客户端的开发}
-	% 		\end{itemize}
-	% 		}	
-	% \end{itemize}
-	% \begin{itemize}
-	% 	\item
-	% 		\ressubheading{协同策略管理}{科研项目}{Android、数据挖掘}{\emph{2011~年~3~月至~2014~年~2~月}}
-	% 		{\begin{itemize}
-	% 			\resitem{提出一种新颖的策略管理框架，核心思想是具有相似功能的应用应该以相似的策略进行管理}
-	% 			\resitem{利用基于数据挖掘的方法获取相似的策略，与现有方法相比实现效果显著提高}
-	% 			\resitem{基于该项目的一篇~poster~和一篇论文分别被~2011~年~ACM CCS~会议和~IEEE TPDS~期刊录用}
-	% 		\end{itemize}
-	% 		}	
-	% \end{itemize}  % End Work Experience list
+			}	
+	\end{itemize}  % End Work Experience list
 %%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%
@@ -254,13 +206,20 @@
 % \item \textbf{Project Table(ongoing)} from \textbf{Capstone Project}. Using Probabilistic Model to learn web page structures and use the learnt structure to extract knowledge and information from web pages, putting them into relational database.
 
 % \end{itemize}
+	
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{代表论文}
+\resheading{Selected Publications}
 \begin{itemize}
- \item
- \textbf{Zhigong Li}, Weili Han, Wenyuan Xu, \emph{A Large-Scale Empirical Study of Chinese Web Passwords}, In Proceedings of the 23rd {USENIX} Security Symposium, San Diego, CA, USA, August 20-22, 2014.
+ \item 
+ \textbf{Zheran Fang}, Weili Han, Yingjiu Li, \emph{Permission Based Android Security: Issues and Countermeasures}, In Computers \& Security 43 (2014), 205–218 (Dec, 2012)
 
+ \item
+  Weili Han, \textbf{Zheran Fang}, Laurence T. Yang, Gang Pan, Zhaohui Wu, \emph{Collaborative Policy Administration}, In IEEE Transactions on Parallel and Distributed Systems
 \end{itemize}
 
 
